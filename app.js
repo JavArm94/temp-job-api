@@ -42,7 +42,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send('<h1>jobs API</h1><a href"/api-docs">Documentation</a>');
+  res.send('<h1>jobs API</h1><a href="/api-docs">Documentation</a>');
 });
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
